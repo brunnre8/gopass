@@ -2,6 +2,6 @@
 Type=Application
 Name=GoPass
 Desc=Password manager
-Exec=$GOPATH/bin/gopass
+Exec=gopass
 Icon=gopass
 StartupNotify=true
