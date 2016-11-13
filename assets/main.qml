@@ -15,6 +15,7 @@ ApplicationWindow {
     height: 400
     minimumHeight: 400
     x: (Screen.width - width) / 2
+    y: (Screen.height - height) / 2
     flags: Qt.FramelessWindowHint | Qt.Window
     color: "transparent"
 
