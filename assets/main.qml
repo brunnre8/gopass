@@ -43,7 +43,7 @@ ApplicationWindow {
     Rectangle {
         id: mainLayout
 
-        color: "#333"
+        color: "#282828"
         radius: 10
         anchors.rightMargin: 0
         anchors.bottomMargin: 0
@@ -51,7 +51,7 @@ ApplicationWindow {
         anchors.topMargin: 0
         anchors.fill: parent
         border.width: 2
-        border.color: "#aaa"
+        border.color: "#665c54"
 
         RowLayout {
             id: panes
@@ -78,13 +78,13 @@ ApplicationWindow {
                     placeholderText: "Search your passwords..."
 
                     style: TextFieldStyle {
-                        textColor: "white"
-                        placeholderTextColor: "#444"
+                        textColor: "#ebdbb2"
+                        placeholderTextColor: "#a89984"
                         background: Rectangle {
                             radius: 5
-                            border.color: "#666"
+                            border.color: "#665c54"
                             border.width: 1
-                            color: "#333"
+                            color: "#282828"
                         }
                     }
                 }
@@ -108,7 +108,7 @@ ApplicationWindow {
                         model: passwords.len
                         delegate: passwordEntry
                         highlight: Rectangle {
-                            color: "#444"
+                            color: "#504945"
                             radius: 3
                             anchors.left: parent ? parent.left : undefined
                             anchors.right: parent ? parent.right : undefined
@@ -126,7 +126,7 @@ ApplicationWindow {
                     z: -1
                     height: 14
                     font.pixelSize: 14
-                    color: "#aaa"
+                    color: "#d5c4a1"
                 }
             }
 
@@ -134,8 +134,10 @@ ApplicationWindow {
                 id: frame
                 width: 300;
                 Layout.fillHeight: true
-                color: "#444"
+                color: "#282828"
                 radius: 10
+                border.color: "#665c54"
+                border.width: 2
 
                 ColumnLayout {
                     id: rightPane
@@ -204,7 +206,7 @@ ApplicationWindow {
                                 var p = (countdown/15.0)
                                 context.reset()
                                 context.lineWidth = lw
-                                context.strokeStyle = cached?"#666":"#966"
+                                context.strokeStyle = cached?"#665c54":"#966"
                                 context.arc(cx, cy, r, 0, 2.0*Math.PI , false)
                                 context.stroke()
 
@@ -222,13 +224,13 @@ ApplicationWindow {
                         horizontalAlignment: Text.AlignHCenter
                         font.pixelSize: 18
                         text: ui.password.name
-                        color: "#eee"
+                        color: "#fabd2f"
                     }
                     Rectangle {
                         id: rectangle1
                         height: 24
-                        color: "#555"
-                        border.color: "#444"
+                        color: "#3c3836"
+                        border.color: "#665c54"
                         border.width: 2
                         radius: 10
                         Layout.fillHeight: false
@@ -239,7 +241,7 @@ ApplicationWindow {
                         Text{
                             id: info
                             horizontalAlignment: Text.AlignHCenter
-                            color: "#aaa"
+                            color: "#ebdbb2"
                             padding: 5
                             font.pixelSize: 10
                             text: ui.password.info
@@ -283,8 +285,8 @@ ApplicationWindow {
                             readOnly: true
                             font.pixelSize: 12
                             font.family: "Courier"
-                            color: "white"
-                            selectionColor: "#666"
+                            color: "#ebdbb2"
+                            selectionColor: "#665c54"
                             text: ui.password.metadata
                             wrapMode: TextEdit.WrapAnywhere
                         }
@@ -341,7 +343,7 @@ ApplicationWindow {
 
                 text: passwords.get(index).name;
                 font.pixelSize: 18
-                color: ListView.isCurrentItem? "#dd00bb":"gray"
+                color: ListView.isCurrentItem? "#fabd2f":"#bdae93"
 
                 MouseArea{
                     anchors.fill: parent
