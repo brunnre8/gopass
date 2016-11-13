@@ -1,3 +1,6 @@
+## This is a fork!
+I disklike mangenta, so the colorscheme in this fork is base on [gruvbox](https://github.com/morhetz/gruvbox)
+
 ## Simple UI for password-store
 ![Screenshot](screencast.gif)
 
