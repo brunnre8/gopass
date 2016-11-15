@@ -14,7 +14,7 @@ ifeq ($(OS),Linux)
 		mkdir -p $(XDG_APPLICATION_PATH)
 		cp gopass.desktop $(XDG_APPLICATION_PATH)
 		mkdir -p $(XDG_ICON_PATH)
-		cp assets/logo.svg $(XDG_ICON_PATH)/gopass.svg
+		cp assets/logo_yellow.svg $(XDG_ICON_PATH)/gopass.svg
 endif
 
 setup:

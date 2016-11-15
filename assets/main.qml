@@ -159,7 +159,7 @@ ApplicationWindow {
                             id: metadataToggle
                             width: 48; height: 48
                             fillMode: Image.PreserveAspectFit
-                            source: ui.showMetadata ? "eye_open.svg": "eye_closed.svg"
+                            source: ui.showMetadata ? "eye_open_yellow.svg": "eye_closed_yellow.svg"
 
                         }
                         }
@@ -171,7 +171,7 @@ ApplicationWindow {
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.topMargin: 24
                             fillMode: Image.PreserveAspectFit
-                            source: "logo.svg"
+                            source: "logo_yellow.svg"
                         }
 
                         Image{
@@ -180,7 +180,7 @@ ApplicationWindow {
                             anchors.right: parent.right
                             anchors.rightMargin: 25
                             fillMode: Image.PreserveAspectFit
-                            source: "copy.svg"
+                            source: "copy_yellow.svg"
                             anchors.verticalCenter: parent.verticalCenter
                             MouseArea{
                                 anchors.fill: parent
